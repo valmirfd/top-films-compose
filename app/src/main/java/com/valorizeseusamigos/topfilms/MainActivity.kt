@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.valorizeseusamigos.topfilms.presenter.welcome.WelComeScreen
-import com.valorizeseusamigos.topfilms.ui.theme.TopFilmsTheme
+import com.valorizeseusamigos.topfilms.presenter.screens.welcome.WelComeScreen
+import com.valorizeseusamigos.topfilms.presenter.theme.TopFilmsTheme
 
 
 class MainActivity : ComponentActivity() {

@@ -1,4 +1,4 @@
-package com.valorizeseusamigos.topfilms.ui.theme
+package com.valorizeseusamigos.topfilms.presenter.theme
 
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily

@@ -1,4 +1,4 @@
-package com.valorizeseusamigos.topfilms.presenter.splash
+package com.valorizeseusamigos.topfilms.presenter.screens.splash
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -18,7 +18,7 @@ import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.LottieConstants
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.valorizeseusamigos.topfilms.R
-import com.valorizeseusamigos.topfilms.ui.theme.TopFilmsTheme
+import com.valorizeseusamigos.topfilms.presenter.theme.TopFilmsTheme
 
 @Composable
 fun SplashScreen() {

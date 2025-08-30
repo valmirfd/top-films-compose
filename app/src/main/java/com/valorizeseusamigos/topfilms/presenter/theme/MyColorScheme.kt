@@ -1,4 +1,4 @@
-package com.valorizeseusamigos.topfilms.ui.theme
+package com.valorizeseusamigos.topfilms.presenter.theme
 
 import androidx.compose.ui.graphics.Color
 
