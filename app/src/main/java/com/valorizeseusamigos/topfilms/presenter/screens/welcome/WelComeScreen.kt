@@ -3,7 +3,9 @@ package com.valorizeseusamigos.topfilms.presenter.screens.welcome
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.Scaffold
@@ -13,7 +15,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.valorizeseusamigos.topfilms.R
+import com.valorizeseusamigos.topfilms.presenter.components.button.PrimaryButton
 import com.valorizeseusamigos.topfilms.presenter.components.slide.WelcomeSlideUI
 import com.valorizeseusamigos.topfilms.presenter.theme.TopFilmsTheme
 
@@ -60,10 +64,27 @@ fun WelComeContent() {
                     modifier = Modifier
                         .align(Alignment.BottomCenter)
                 )
-                WelcomeSlideUI(
-                    slideItems = slideItems,
-                    pagerState = pagerState
-                )
+
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                ) {
+                    WelcomeSlideUI(
+                        modifier = Modifier
+                            .weight(1f),
+                        slideItems = slideItems,
+                        pagerState = pagerState
+                    )
+
+                    PrimaryButton(
+                        modifier = Modifier
+                            .padding(start = 24.dp, end = 24.dp, bottom = 24.dp),
+                        text = "Pular",
+                        isLoading = false,
+                        enabled = true,
+                        onClick = {}
+                    )
+                }
             }
         }
     )
